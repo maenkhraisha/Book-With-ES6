@@ -1,38 +1,46 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 100%;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
 }
-*::before,*::after{
-    box-sizing: inherit;
+
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /* header container */
-.header-container{
-    border: 3px solid black;
+.header-container {
+  border: 3px solid black;
 }
+
 /* main */
-.main-section{
-    border: 3px solid yellow;
+.main-section {
+  border: 3px solid yellow;
 }
+
 /* home container */
-.home-container{
-    border: 3px solid black;
+.home-container {
+  border: 3px solid black;
 }
+
 /* book list container */
-.list-container{
-    border: 3px solid black;
+.list-container {
+  border: 3px solid black;
 }
+
 /* add book conatiner */
-.add-container{
-    border: 3px solid black;
+.add-container {
+  border: 3px solid black;
 }
-/* contact information conatiner*/
-.contact-container{
-    border: 3px solid black;
+
+/* contact information conatiner */
+.contact-container {
+  border: 3px solid black;
 }
+
 /* footer conatiner */
-.footer-container{
-    border : 3px solid black;
+.footer-container {
+  border: 3px solid black;
 }
