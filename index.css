@@ -22,21 +22,25 @@
 
 /* home container */
 .home-container {
+  display: none;
   border: 3px solid black;
 }
 
 /* book list container */
 .list-container {
+  display: none;
   border: 3px solid black;
 }
 
 /* add book conatiner */
 .add-container {
+  display: none;
   border: 3px solid black;
 }
 
 /* contact information conatiner */
 .contact-container {
+  display: none;
   border: 3px solid black;
 }
 
