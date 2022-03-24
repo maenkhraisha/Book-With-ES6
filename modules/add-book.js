@@ -11,7 +11,6 @@ export default btnAdd.addEventListener('click', () => {
     inputAuthor.value,
   );
   book.Add();
-  console.log('"add btn"');
   inputTitle.innerHTML = '';
   inputAuthor.innerHTML = '';
 });

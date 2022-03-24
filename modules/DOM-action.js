@@ -7,15 +7,15 @@ let elAuthor;
 let elRemoveBtn;
 const elBookList = document.querySelector('.book-list');
 
-function toggoleRowColor() {
+const toggoleRowColor = () => {
   const bookContainers = document.querySelectorAll('.book-container');
   for (let i = 0; i < bookContainers.length; i += 1) {
     if (i % 2 === 0) bookContainers[i].style.backgroundColor = 'lightgray';
   }
-}
-function fromJson(b) {
-  return new BookClass(b.id, b.title, b.author);
-}
+};
+
+const fromJson = (b) => new BookClass(b.id, b.title, b.author);
+
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
@@ -32,7 +32,7 @@ export function createElements() {
   elRemoveBtn.textContent = 'Remove';
 }
 
-export function appendElements(book) {
+export const appendElements = (book) => {
   elBookList.appendChild(elBookContainer);
 
   elID.innerText = book.getId();
@@ -61,4 +61,4 @@ export function appendElements(book) {
     });
   });
   toggoleRowColor();
-}
+};

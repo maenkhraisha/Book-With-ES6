@@ -2,15 +2,13 @@ import BookClass from './book-class.js';
 import { createElements, appendElements } from './DOM-action.js';
 
 const elBookList = document.querySelector('.book-list');
-function removeAllChildNodes(parent) {
+const removeAllChildNodes = (parent) => {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
   }
-}
+};
 
-function fromJson(b) {
-  return new BookClass(b.id, b.title, b.author);
-}
+const fromJson = (b) => new BookClass(b.id, b.title, b.author);
 
 // === create book list === //
 export default function createBookList() {

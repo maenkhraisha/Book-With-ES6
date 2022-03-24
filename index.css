@@ -11,10 +11,6 @@
 }
 
 /* header container */
-.header-container {
-  border: 3px solid black;
-}
-
 .navbar {
   margin: 4%;
   margin-top: 2%;
@@ -198,7 +194,11 @@
 
 /* footer conatiner */
 .footer-container {
-  border: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #000;
+  margin: 2rem;
 }
 
 .logo {
