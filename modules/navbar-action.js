@@ -9,7 +9,7 @@ const btnContact = document.getElementById('navbtn-contact');
 btnHome.addEventListener('click', () => {
   show('home');
 });
-btnList.addEventListener('click', () => {
+export default btnList.addEventListener('click', () => {
   createBookList();
   show('list');
 });

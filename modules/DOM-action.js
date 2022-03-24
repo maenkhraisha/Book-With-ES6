@@ -1,6 +1,4 @@
 import BookClass from './book-class.js';
-import show from './show.js';
-
 // === declaration of variables === //
 let elBookContainer;
 let elID;
@@ -8,6 +6,21 @@ let elTitle;
 let elAuthor;
 let elRemoveBtn;
 const elBookList = document.querySelector('.book-list');
+
+function toggoleRowColor() {
+  const bookContainers = document.querySelectorAll('.book-container');
+  for (let i = 0; i < bookContainers.length; i += 1) {
+    if (i % 2 === 0) bookContainers[i].style.backgroundColor = 'lightgray';
+  }
+}
+function fromJson(b) {
+  return new BookClass(b.id, b.title, b.author);
+}
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+}
 
 export function createElements() {
   elBookContainer = document.createElement('div');
@@ -38,6 +51,14 @@ export function appendElements(book) {
   elRemoveBtn.addEventListener('click', () => {
     BookClass.bookArray = BookClass.bookArray.filter((ele) => ele.id !== book.getId());
     localStorage.setItem('bookList', JSON.stringify(BookClass.bookArray));
-    show('list');
+
+    removeAllChildNodes(elBookList);
+    const tempArray = JSON.parse(localStorage.getItem('bookList'));
+    tempArray.forEach((b) => {
+      b = fromJson(b);
+      createElements();
+      appendElements(b);
+    });
   });
+  toggoleRowColor();
 }

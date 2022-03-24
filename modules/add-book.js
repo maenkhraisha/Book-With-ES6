@@ -1,6 +1,4 @@
-import show from './show.js';
 import BookClass from './book-class.js';
-import createBookList from './create-book-list.js';
 
 const btnAdd = document.getElementById('add-btn');
 const inputTitle = document.getElementById('title-input');
@@ -13,8 +11,7 @@ export default btnAdd.addEventListener('click', () => {
     inputAuthor.value,
   );
   book.Add();
-  inputTitle.innerText = '';
-  inputAuthor.innerText = '';
-  createBookList();
-  show('list');
+  console.log('"add btn"');
+  inputTitle.innerHTML = '';
+  inputAuthor.innerHTML = '';
 });

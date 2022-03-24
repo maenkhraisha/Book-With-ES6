@@ -14,6 +14,7 @@
 .header-container {
   border: 3px solid black;
 }
+
 .navbar {
   margin: 4%;
   margin-top: 2%;
@@ -24,6 +25,7 @@
   border: 2.5px solid #000;
   box-shadow: 3px 3px #000;
 }
+
 .navbar ul {
   display: flex;
   justify-content: space-between;
@@ -31,18 +33,21 @@
   padding: 0;
   margin-right: 16px;
 }
+
 .nav-list {
   display: flex;
   align-items: center;
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
 .nav-link {
   border-right: 3px solid #000;
   padding-left: 4px;
   padding-right: 4px;
   cursor: pointer;
 }
+
 .nav-link:last-child {
   border: none;
 }
@@ -55,6 +60,7 @@
 .nav-link a:hover {
   color: rgb(92, 161, 207);
 }
+
 /* main */
 .main-section {
   width: 66%;
@@ -68,12 +74,14 @@
 
 
 /* home container */
-.home-container {
-  display: none;
+.home-container{
+  text-align: center;
+  margin: 2rem 0;
 }
 .home-container h2 {
   font-size: 28px;
 }
+
 .desc-title {
   font-family: 'Fredoka', sans-serif;
   font-size: 48px;
@@ -88,12 +96,16 @@
 }
 
 /* book list container */
+.title{
+  font-size:  2rem;
+}
 .list-container {
-  display: none;
   width: 100%;
   flex-direction: column;
   align-items: center;
+  margin: 2rem 0;
 }
+
 .book-list {
   border: 3px solid #000;
   filter: drop-shadow(2px 2px 1px #afafaf);
@@ -102,12 +114,14 @@
   height: 50vh;
   overflow: hidden;
 }
+
 .book-container {
   display: flex;
   font-size: 16px;
   font-family: 'Fredoka', sans-serif;
   font-weight: 600;
   width: 100%;
+  padding: 0.5rem;
 }
 
 /* remove button */
@@ -129,8 +143,8 @@
 }
 
 /* add book conatiner */
-.add-container {
-  display: none;
+.add-container{
+  margin: 2rem 0;
 }
 .book-form {
   display: flex;
@@ -167,12 +181,12 @@
 
 /* contact information conatiner */
 .contact-container {
-  display: none;
   font-family: 'Fredoka', sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 2rem 0;
 }
 
 .contact-list {
@@ -189,6 +203,7 @@
 .logo {
   width: 240px;
 }
+
 .cc {
   font-family: 'Fredoka', sans-serif;
   font-weight: 600;
