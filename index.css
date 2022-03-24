@@ -74,10 +74,11 @@
 
 
 /* home container */
-.home-container{
+.home-container {
   text-align: center;
   margin: 2rem 0;
 }
+
 .home-container h2 {
   font-size: 28px;
 }
@@ -96,9 +97,10 @@
 }
 
 /* book list container */
-.title{
-  font-size:  2rem;
+.title {
+  font-size: 2rem;
 }
+
 .list-container {
   width: 100%;
   flex-direction: column;
@@ -143,9 +145,10 @@
 }
 
 /* add book conatiner */
-.add-container{
+.add-container {
   margin: 2rem 0;
 }
+
 .book-form {
   display: flex;
   flex-direction: column;
